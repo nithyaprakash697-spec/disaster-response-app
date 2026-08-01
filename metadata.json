@@ -1,0 +1,6 @@
+{
+  "name": "Disaster Response Hub",
+  "description": "A multi-agent AI system for real-time disaster management, resource allocation, and citizen emergency reporting with offline PWA support.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

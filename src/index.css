@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@keyframes windDrift {
+  0%, 100% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+}
+
+@keyframes waveSway {
+  0%, 100% { transform: translateX(-4px) translateY(0); }
+  50% { transform: translateX(4px) translateY(-2px); }
+}
+
+@keyframes waterRise {
+  0%, 100% { transform: translateY(2px); }
+  50% { transform: translateY(-2px); }
+}
+
+@keyframes flameFlicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.08); }
+}
+
+@keyframes slideDownFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-wind-drift {
+  animation: windDrift 3s ease-in-out infinite;
+}
+
+.animate-wave-sway {
+  animation: waveSway 2.5s ease-in-out infinite;
+}
+
+.animate-water-rise {
+  animation: waterRise 2s ease-in-out infinite;
+}
+
+.animate-flame-flicker {
+  animation: flameFlicker 1.2s ease-in-out infinite;
+}
+
+.animate-slide-down {
+  animation: slideDownFade 0.4s ease-out forwards;
+}
